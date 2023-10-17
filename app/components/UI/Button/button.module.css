@@ -1,0 +1,12 @@
+.base {
+  width: 20em;
+  height: 3.5em;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  color: white;
+}
+
+.base:hover {
+  transform: scale(1.03);
+}
