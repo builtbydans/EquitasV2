@@ -1,0 +1,29 @@
+.heroContainer {
+  margin: 2.5em 0em;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+  grid-template-areas:
+    "first second"
+    "first third";
+}
+
+.heroContainer > div {
+  background-color: rgb(173 196 255);
+  text-align: center;
+  font-size: 30px;
+  border-radius: 10px;
+  padding: 7rem;
+}
+
+.heroContainer > div:first-child {
+  grid-area: first;
+}
+
+.heroContainer > div:nth-child(2) {
+  grid-area: second;
+}
+
+.heroContainer > div:last-child {
+  grid-area: third;
+}

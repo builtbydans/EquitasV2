@@ -1,10 +1,8 @@
 import styles from "./button.module.css";
 
-const Button = ({ label, btnStyle, onClick }) => {
-  const defaultStyle = {};
-
+const Button = ({ label, onClick }) => {
   return (
-    <button className={styles.base} style={btnStyle} onClick={onClick}>
+    <button className={styles.base} onClick={onClick}>
       {label}
     </button>
   );

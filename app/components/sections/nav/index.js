@@ -1,6 +1,7 @@
 import styles from "./nav.module.css";
 import Link from "next/link";
-import { Menu, Button } from "@mui/material";
+import { Menu } from "@mui/material";
+import Button from "../../ui/button";
 
 const Nav = () => {
   return (
@@ -13,14 +14,12 @@ const Nav = () => {
         </div>
         <div className={styles.navRight}>
           <ul className={styles.navMenu}>
-            <li>
-              <Link href="/about">About</Link>
-            </li>
-            <li>Product</li>
-            <li>Pricing</li>
-            <li>About</li>
-            <Button variant="contained">Sign Up</Button>
-            <Button variant="contained">Log In</Button>
+            <Link href="/about">About</Link>
+            <Link href="/about">Pricing</Link>
+            <Link href="/about">Docs</Link>
+            <Link href="/about">Support</Link>
+            <Button label="Sign Up" />
+            <Button label="Log In" />
           </ul>
         </div>
       </div>
